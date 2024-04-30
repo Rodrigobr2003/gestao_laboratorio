@@ -1,0 +1,6 @@
+.display-card {
+  background-color: #eee;
+  display: flex;
+  width: 98%;
+  margin: auto;
+}
