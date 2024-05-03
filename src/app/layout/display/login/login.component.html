@@ -1,1 +1,50 @@
-<p>login works!</p>
+<style>
+
+  .card input[type="email"],
+  .card input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  .institution{
+    font-size: large;
+  }
+</style>
+<div class="login">
+    <div class="institution">
+    <h1>Centro Paulo Souzo</h1>
+    </div>
+  <div class="card">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</div>
+
+
