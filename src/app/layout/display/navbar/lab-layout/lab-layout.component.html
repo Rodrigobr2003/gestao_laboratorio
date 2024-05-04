@@ -1,1 +1,7 @@
-<p>lab-layout works!</p>
+<h1>Laboratórios</h1>
+<br>
+<h3 class="subtitle">Escolha o laboratório que deseja reservar</h3>
+<div *ngFor="let url of lab" class="computers">
+    <img [src]="url" alt="computers" width="100" height="100">
+</div>
+  

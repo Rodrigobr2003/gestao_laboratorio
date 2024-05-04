@@ -1,0 +1,17 @@
+.computers {
+    display: inline-block;
+    margin-left: 160px;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  
+  .computers img {
+    display: block;
+  }
+  
+  @media (max-width: 800px) {
+    .computers {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
