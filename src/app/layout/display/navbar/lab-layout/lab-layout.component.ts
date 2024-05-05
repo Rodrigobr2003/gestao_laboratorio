@@ -14,6 +14,6 @@ export class LabLayoutComponent {
     '../../../../../assets/Icone computador 4 svg.png',
     '../../../../../assets/Icone computador 5 svg.png',
     '../../../../../assets/Icone computador 6 svg.png'
-  ]
+  ];
 
 }
