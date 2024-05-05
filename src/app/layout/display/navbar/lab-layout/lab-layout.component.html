@@ -4,8 +4,11 @@
     <div class="divider"></div>
     <br>
     <h3 class="subtitle">Escolha o laboratório que deseja reservar :</h3>
-    <div *ngFor="let url of lab" class="computers">
-        <img src="{{url}}" alt="computers">
+    <div *ngFor="let img of lab; let i = index" class="computers">
+        <a [routerLink]="['/laboratorios', i + 1, 'lab' + (i + 1), 'disponibilidade']">
+            <img src="{{img}}" alt="computers" [id]="'img_' + (i + 1)" (mouseenter)="brightenImage($event)" (mouseleave)="resetBrightness($event)">
+        </a>
     </div>
+    
 </div>
 

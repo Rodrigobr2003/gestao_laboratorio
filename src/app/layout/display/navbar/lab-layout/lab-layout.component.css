@@ -13,6 +13,12 @@
     height: 120px;
 }
 
+.computers img:hover {
+    filter: brightness(150%);
+}
+
+
+
 @media (max-width: 800px) {
     .computers {
         width: calc(33.33% - 20px);
@@ -39,7 +45,7 @@
     margin-left: 5em;
     color: #76ABAE;
     text-align: start;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 40px;
     font-style: italic;
 }

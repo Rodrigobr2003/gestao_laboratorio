@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-lab-layout',
   templateUrl: './lab-layout.component.html',
-  styleUrl: './lab-layout.component.css'
+  styleUrls: ['./lab-layout.component.css']
 })
 export class LabLayoutComponent {
 
@@ -16,4 +16,11 @@ export class LabLayoutComponent {
     '../../../../../assets/Icone computador 6 svg.png'
   ];
 
+  brightenImage(event: any) {
+    event.target.classList.add('brighten');
+  }
+
+  resetBrightness(event: any) {
+    event.target.classList.remove('brighten');
+  }
 }

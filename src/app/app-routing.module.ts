@@ -8,14 +8,17 @@ import { HorariosComponent } from './layout/display/navbar/lab-layout/calendario
 import { ApelarComponent } from './layout/display/apelar/apelar.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
-  {path: 'home', component: HomeComponent},
-  {path: "laboratorios", component: LabLayoutComponent, children: [
-    {path: ":id/:nome/disponibilidade", component: CalendarioComponent, children: [
-      {path: "horarios", component: HorariosComponent},
-    ]},
-  ]},
-  {path: "apelar", component: ApelarComponent}
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  {
+    path: "laboratorios", component: LabLayoutComponent, children: [
+      {path: ":id/:nome/disponibilidade", component: CalendarioComponent, children: [
+          { path: "horarios", component: HorariosComponent }
+        ]
+      }
+    ]
+  },
+  { path: "apelar", component: ApelarComponent }
 ];
 
 @NgModule({
