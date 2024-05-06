@@ -1,26 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-lab-layout',
   templateUrl: './lab-layout.component.html',
   styleUrls: ['./lab-layout.component.css']
 })
-export class LabLayoutComponent {
+export class LabLayoutComponent implements OnInit{
 
-  lab: string []=[
-    '../../../../../assets/Icone computador 1 svg.png',
-    '../../../../../assets/Icone computador 2 svg.png',
-    '../../../../../assets/Icone computador 3 svg.png',
-    '../../../../../assets/Icone computador 4 svg.png',
-    '../../../../../assets/Icone computador 5 svg.png',
-    '../../../../../assets/Icone computador 6 svg.png'
-  ];
+  constructor(private router: Router, private route: ActivatedRoute){}
 
-  brightenImage(event: any) {
-    event.target.classList.add('brighten');
+  ngOnInit(): void {
+      this.router.navigate(['laboratorios'], {relativeTo: this.route})
   }
 
-  resetBrightness(event: any) {
-    event.target.classList.remove('brighten');
-  }
 }
