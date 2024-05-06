@@ -1,14 +1,11 @@
 <div class="lab">
-    
-    <h1 class="title">Laboratórios</h1>
-    <div class="divider"></div>
-    <br>
-    <h3 class="subtitle">Escolha o laboratório que deseja reservar :</h3>
-    <div (click)="acessarLab()" *ngFor="let img of lab; let i = index" class="computers">
-        <!-- <a [routerLink]="['/layout/laboratorios', i + 1, 'lab' + (i + 1), 'disponibilidade']"> -->
-            <img src="{{img}}" alt="computers" [id]="'img_' + (i + 1)" (mouseenter)="brightenImage($event)" (mouseleave)="resetBrightness($event)">
-        <!-- </a> -->
-        
-    </div>
-    
+  <h1 class="title">Laboratórios</h1>
+  <div class="divider"></div>
+  <br />
+  <h3 class="subtitle">Escolha o laboratório que deseja reservar :</h3>
+  <div (click)="acessarLab()" class="computers" *ngFor="let lab of listaLabs">
+    <img src="{{ lab.img }}" alt="computers" id="{{ lab.id }}" />
+    <!-- (mouseover)="brightenImage($event)"
+      (mouseleave)="resetBrightness($event)" -->
+  </div>
 </div>

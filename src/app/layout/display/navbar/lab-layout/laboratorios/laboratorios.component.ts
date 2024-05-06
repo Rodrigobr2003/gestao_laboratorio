@@ -1,32 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { LaboratoriosService } from './laboratorios.service';
 
 @Component({
   selector: 'app-laboratorios',
   templateUrl: './laboratorios.component.html',
-  styleUrl: './laboratorios.component.css'
+  styleUrl: './laboratorios.component.css',
 })
-export class LaboratoriosComponent {
-  constructor(private router : Router, private route : ActivatedRoute){}
+export class LaboratoriosComponent implements OnInit {
+  listaLabs: { id: number; nome: string; img: string }[] = [];
 
-  lab: string []=[
-    '../../../../../assets/Icone computador 1 svg.png',
-    '../../../../../assets/Icone computador 2 svg.png',
-    '../../../../../assets/Icone computador 3 svg.png',
-    '../../../../../assets/Icone computador 4 svg.png',
-    '../../../../../assets/Icone computador 5 svg.png',
-    '../../../../../assets/Icone computador 6 svg.png'
-  ];
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private labSrv: LaboratoriosService
+  ) {}
 
-  brightenImage(event: any) {
-    event.target.classList.add('brighten');
+  ngOnInit(): void {
+    this.listaLabs = this.labSrv.getLabs();
   }
 
-  resetBrightness(event: any) {
-    event.target.classList.remove('brighten');
+  acessarLab() {
+    this.router.navigate([1, 'lab1', 'disponibilidade'], {
+      relativeTo: this.route,
+    });
   }
 
-  acessarLab(){
-    this.router.navigate([ 1, "lab1" ,'disponibilidade'], {relativeTo: this.route})
-  }
+  // brightenImage(event: any) {
+  //   event.target.classList.add('brighten');
+  // }
+
+  // resetBrightness(event: any) {
+  //   event.target.classList.remove('brighten');
+  // }
 }
