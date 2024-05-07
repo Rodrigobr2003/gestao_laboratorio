@@ -12,6 +12,8 @@ import { CalendarioComponent } from './layout/display/navbar/lab-layout/calendar
 import { HorariosComponent } from './layout/display/navbar/lab-layout/calendario/horarios/horarios.component';
 import { LoginComponent } from './layout/display/login/login.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LaboratoriosComponent } from './layout/display/navbar/lab-layout/laboratorios/laboratorios.component';
+import { BrightnessLabDirective } from './layout/display/navbar/lab-layout/laboratorios/brightness-lab.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HorariosComponent,
     HomeComponent,
     LoginComponent,
+    LaboratoriosComponent,
+    BrightnessLabDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
