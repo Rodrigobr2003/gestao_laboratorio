@@ -25,12 +25,4 @@ export class LaboratoriosComponent implements OnInit {
       relativeTo: this.route
     });
   }
-
-  // brightenImage(event: any) {
-  //   event.target.classList.add('brighten');
-  // }
-
-  // resetBrightness(event: any) {
-  //   event.target.classList.remove('brighten');
-  // }
 }

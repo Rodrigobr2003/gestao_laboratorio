@@ -3,9 +3,7 @@
   <div class="divider"></div>
   <br />
   <h3 class="subtitle">Escolha o laboratório que deseja reservar :</h3>
-  <div (click)="acessarLab()" class="computers" *ngFor="let lab of listaLabs">
+  <div appBrightnessLab (click)="acessarLab()" class="computers" *ngFor="let lab of listaLabs">
     <img src="{{ lab.img }}" alt="computers" id="{{ lab.id }}" />
-    <!-- (mouseover)="brightenImage($event)"
-      (mouseleave)="resetBrightness($event)" -->
   </div>
 </div>
