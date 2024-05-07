@@ -3,26 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeLayoutComponent } from './layout/display/home-layout/home-layout.component';
-import { UserLayoutComponent } from './layout/display/user-layout/user-layout.component';
-import { LabLayoutComponent } from './layout/display/lab-layout/lab-layout.component';
-import { HorariosComponent } from './layout/display/lab-layout/calendario/horarios/horarios.component';
+import { HomeComponent } from './layout/display/home/home.component';
+import { LabLayoutComponent } from './layout/display/navbar/lab-layout/lab-layout.component';
 import { ApelarComponent } from './layout/display/apelar/apelar.component';
 import { DisplayComponent } from './layout/display/display.component';
-import { CalendarioComponent } from './layout/display/lab-layout/calendario/calendario.component';
+import { NavbarComponent } from './layout/display/navbar/navbar.component';
+import { CalendarioComponent } from './layout/display/navbar/lab-layout/calendario/calendario.component';
+import { HorariosComponent } from './layout/display/navbar/lab-layout/calendario/horarios/horarios.component';
+import { LoginComponent } from './layout/display/login/login.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeLayoutComponent,
-    UserLayoutComponent,
     LabLayoutComponent,
-    HorariosComponent,
     ApelarComponent,
     DisplayComponent,
+    NavbarComponent,
     CalendarioComponent,
+    HorariosComponent,
+    HomeComponent,
+    LoginComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
