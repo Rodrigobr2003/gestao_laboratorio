@@ -12,22 +12,25 @@ const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   {
-    path: "layout", component: LabLayoutComponent, children: [
+    path: 'layout',
+    component: LabLayoutComponent,
+    children: [
       {
-        path: "laboratorios", component: LaboratoriosComponent
+        path: 'laboratorios',
+        component: LaboratoriosComponent,
       },
       {
-        path: ":id/:nome/disponibilidade", component: CalendarioComponent, children: [
-          { path: "horarios", component: HorariosComponent }
-        ]
+        path: ':id/:nome/disponibilidade',
+        component: CalendarioComponent,
       },
-    ]
+      { path: 'horarios', component: HorariosComponent },
+      { path: 'apelar', component: ApelarComponent },
+    ],
   },
-  { path: "apelar", component: ApelarComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
