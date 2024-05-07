@@ -13,13 +13,14 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {
     path: "layout", component: LabLayoutComponent, children: [
-      {path: "laboratorios", component: LaboratoriosComponent, children: [
-        {path: ":id/:nome/disponibilidade", component: CalendarioComponent, children: [
+      {
+        path: "laboratorios", component: LaboratoriosComponent
+      },
+      {
+        path: ":id/:nome/disponibilidade", component: CalendarioComponent, children: [
           { path: "horarios", component: HorariosComponent }
         ]
-        }
-      ]}
-      
+      },
     ]
   },
   { path: "apelar", component: ApelarComponent }

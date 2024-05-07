@@ -21,8 +21,8 @@ export class LaboratoriosComponent implements OnInit {
   }
 
   acessarLab() {
-    this.router.navigate([1, 'lab1', 'disponibilidade'], {
-      relativeTo: this.route,
+    this.router.navigate(['../', 1, 'lab1', 'disponibilidade'], {
+      relativeTo: this.route
     });
   }
 
