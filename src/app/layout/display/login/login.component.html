@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-weight: 10;
     font-style: italic;
+    
   }
 
   .login,
@@ -16,7 +17,9 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    
   }
 
   .card {
@@ -31,27 +34,31 @@
 
   .card input[type="email"],
   .card input[type="password"] {
+    align-items: center;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     box-sizing: border-box;
+    background-color: #eeeeee ;
   }
 
   .card button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    width: 60%;
+    padding: 20px;
+    background-color: #31363f;
+    color: #eeeeee;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-size: 1.5rem;
+    font-weight: 600;    
   }
 
   .card button:hover {
-    background-color: #0056b3;
+    opacity: 90%;
   }
 
   .login {
@@ -60,22 +67,45 @@
   }
   .institution {
     background-color: #eeeeee;
-    width: 1rem;
-    font-size: 40px;
+    font-size: 6rem;
     border-radius: 60px 0 0 60px;
+    line-height: 1;
+   
+    padding-left: 20px;
+
   }
+.title{
+  font-size: 4rem;
+  text-align: left;
+  color:#eeeeee;
+
+  
+}
+.subtitle{
+  font-size: 1.2rem;
+  text-align: left;
+  color:#eeeeee
+
+}
+
+
 </style>
 
 <div class="container">
   <div class="institution">
-    <h1>Centro Paulo Souzo</h1>
+   <div>Centro</div>
+   <div>Paulo</div>
+   <div>Souzo</div>
+    
   </div>
   <div class="login">
     <div class="card">
-      <h2>Login</h2>
-      <form>
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Senha" required />
+      <div class="title">Login</div>
+      <form class="subtitle">
+        <div>Número de Registro</div>
+        <input type="email" placeholder="" required/>
+        <div>Senha</div>
+        <input type="password" placeholder="" required />
         <button type="submit">Entrar</button>
       </form>
     </div>
