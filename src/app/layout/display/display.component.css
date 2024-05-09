@@ -8,10 +8,11 @@
 }
 
 .card {
-  background-color: #fff;
+  background-color: #eee;
   border-radius: 60px;
   padding: 0px;
   width: 100%;
   height: 100%;
   text-align: center;
+  position: relative;
 }
