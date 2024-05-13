@@ -1,1 +1,11 @@
-<h1 class="title">Laboratórios </h1>
+<div class="calendar">
+    <div class="header">
+        <h1 class="title">Laboratório {{id}}</h1>
+        <div class="month">
+            <fa-icon [icon]="calendario" class="icon"></fa-icon>
+            <select>
+                <option *ngFor="let mes of monthAno" [value]="mes">{{ mes }}</option>
+            </select>
+        </div>
+    </div>
+</div>

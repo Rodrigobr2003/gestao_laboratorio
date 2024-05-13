@@ -2,7 +2,40 @@
     margin-left: 5em;
     color: #76ABAE;
     text-align: start;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 40px;
     font-style: italic;
+    text-shadow: 1px 1px rgba(46, 46, 46, 0.1);
+}
+.calendar{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 457;
+    font-style: normal;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.month{
+    background-color: #76ABAE;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+select{
+    color: black;
+    border: none;
+    background-color: #76ABAE;
+    font-size: 15px;
+}
+
+.icon{
+    font-size: 25px;
 }
