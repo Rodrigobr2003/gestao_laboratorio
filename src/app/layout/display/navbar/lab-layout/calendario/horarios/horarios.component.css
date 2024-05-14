@@ -6,6 +6,7 @@ button{
     margin: 10px 0;
     font-style: italic;
     color: #EEE;
+    text-shadow: 1px 1px 3px #000;
     border: none;
 }
 img{
@@ -22,6 +23,7 @@ img{
     display: flex;
     flex-direction: row;
     color: #76ABAE;
+    text-shadow: 1px 1px 3px #000;
     font-size: 25px;
 }
 .container{
@@ -52,15 +54,17 @@ img{
     background-color: #ff6b6b;
 }
 .calendario{
-    background-color: #31363f;
+    background-color: #76ABAE;
     margin-top: 30px;
+    margin-left: 60px;
     width: 150px;
     height: 50px;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: #000;
+    color: #31363F;
+    text-shadow: 1px 1px 3px #000;
     align-items: center;
 }
 .legenda{
@@ -74,6 +78,7 @@ img{
     font-style: italic;
     font-size: 25px;
     color: #31363F;
+    text-shadow: 1px 1px 3px #000;
     
 }
 .deferido{
