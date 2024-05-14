@@ -63,3 +63,54 @@ img{
     color: #000;
     align-items: center;
 }
+.legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 457;
+    font-style: italic;
+    font-size: 25px;
+    color: #31363F;
+    
+}
+.deferido{
+    border-radius: 100%;
+    border: 20px solid #ff6b6b;
+    margin-top: 1rem;
+}
+.livre{
+    border-radius: 100%;
+    border: 20px solid #6bcb77;
+    margin-left: 130px;
+    margin-top: 1rem;
+}
+.por_voce{
+    border-radius: 100%;
+    border: 20px solid #4D96FF;
+    margin-left: 130px;
+    margin-top: 1rem;
+}
+.leg1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leg2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leg3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 8px;
+}
