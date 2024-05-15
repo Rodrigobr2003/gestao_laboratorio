@@ -37,18 +37,6 @@
   padding-left: 10px;
 }
 
-.subtitle-right {
-  width: 60%;
-  height: 15%;
-}
-
-.right-side {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-}
-
 .box {
   display: flex;
   justify-content: center;
@@ -109,11 +97,16 @@
   margin: 5px 0;
 }
 
-.teste {
-  width: 80%;
-  height: 80%;
+.right-side {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.subtitle-right {
+  width: 60%;
+  height: 15%;
 }
 
 textarea {
@@ -122,6 +115,25 @@ textarea {
   height: 15%;
   padding-left: 10px;
   font-size: 1.3em;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 5px;
+  height: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 button {
@@ -144,21 +156,116 @@ button:hover {
   color: #6d6d6d;
 }
 
-textarea::-webkit-scrollbar {
-  width: 10px;
+@media (min-width: 1100px) {
+
+  .title{
+    font-size: 4.5em;
+    margin-block-end:60px;
+    margin-block-start: 20px;
+  }
+
+  .subtitle {
+    font-size: 2.5em;
+  }
+
+  .subtitle-left {
+    width: 400px;
+  }
+
+  .box {
+    width: 85%;
+  }
+  
+  .date {
+    height: 45%;
+  }
+
+  .year {
+    height: 30%;
+    font-size: 4em;
+  }
+
+  .months {
+    height: 15%;
+  }
+  
+  .months p{
+    font-size: 1.5em;
+  }
+
+  .select-date {
+    height: 50%;
+  }
+  
+  .select-date .box-day {
+    height: 65%;
+    margin: 0 5px 40px 5px;
+    border-radius: 16px;
+  }
+
+  .select-date .box-day h4 {
+    font-size: 1.7em;
+  }
+   
+  .subtitle-right {
+    width: 70%;
+    margin-block-end:20px;
+  }
+
+  button {
+    padding: 8px 38px;
+    font-size: 1.2em;
+    border-radius: 8px;
+  }
 }
 
-textarea::-webkit-scrollbar-track {
-  background: none;
-  border-radius: 5px;
-  height: 5px;
+@media (max-width: 1100px) {
+  .subtitle-right {
+    margin-block-end:20px;
+    font-size: 2em;
+    width: 80%;
+  }
+
 }
 
-textarea::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
+@media (max-width: 800px) {
+  .subtitle-left {
+    font-size: 1.2em;
+    width: 90%;
+  }
 
-textarea::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  .subtitle-right {
+    margin-block-end:10px;
+    font-size: 1.2em;
+    width: 90%;
+    border: 1px solid gray;
+  }
+
+  .year {
+    font-size: 2em;
+  }
+  
+  .months p{
+    font-size: 1em;
+  }
+
+  .select-date {
+    height: 55%;
+  }
+  
+  .select-date .box-day {
+    height: 65%;
+    margin: 0 5px 15px 5px;
+    border-radius: 8px;
+  }
+
+  .select-date .box-day h4 {
+    font-size: 1em;
+  }
+
+  button {
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
 }
