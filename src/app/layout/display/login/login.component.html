@@ -31,6 +31,11 @@
     text-align: center;
     background-color: #76abae;
   }
+  .card form{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
 
   .card input[type="email"],
   .card input[type="password"] {
@@ -54,7 +59,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 1.5rem;
-    font-weight: 600;    
+    font-weight: 600;
   }
 
   .card button:hover {
@@ -70,9 +75,7 @@
     font-size: 6rem;
     border-radius: 60px 0 0 60px;
     line-height: 1;
-   
     padding-left: 20px;
-
   }
 .title{
   font-size: 4rem;
@@ -106,8 +109,8 @@
         <input type="email" placeholder="" required/>
         <div>Senha</div>
         <input type="password" placeholder="" required />
-        <button type="submit">Entrar</button>
-      </form>
+      </form>        
+      <button type="submit">Entrar</button>
     </div>
   </div>
 </div>
