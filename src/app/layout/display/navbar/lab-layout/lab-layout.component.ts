@@ -10,8 +10,8 @@ export class LabLayoutComponent implements OnInit{
 
   constructor(private router: Router, private route: ActivatedRoute){}
 
-  ngOnInit(): void {
-      this.router.navigate(['laboratorios'], {relativeTo: this.route})
-  }
+ ngOnInit(): void {
+ //     this.router.navigate(['laboratorios'], {relativeTo: this.route})
+ }
 
 }

@@ -1,0 +1,141 @@
+button{
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #EEE;
+    text-shadow: 1px 1px 3px #000;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+   opacity: 85%; 
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+select{
+    color: black;
+    border: none;
+    background-color: #76ABAE;
+    font-size: 20px;
+    width: 120px;
+}
+.icon{
+    font-size: 25px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 13px;   
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    color: #76ABAE;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.desktop{
+    margin-left: 20px;
+}
+.container{
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 457;
+    font-style: italic;
+    position: end;
+    height: 100%;
+    width: 90%;
+    float: right;
+}
+.horario1{
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid  #76ABAE;
+    border-top: 10px solid  #76ABAE;
+}
+.horarios{
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid  #76ABAE; 
+}
+.button1{
+    background-color: #6bcb77;
+}
+.button{
+    background-color: #ff6b6b;
+}
+.calendario{
+    background-color: #76ABAE;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+    color: #31363F;
+    text-shadow: 1px 1px 3px #000;
+    align-items: center;
+}
+
+.legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 457;
+    font-style: italic;
+    font-size: 25px;
+    color: #31363F;
+    text-shadow: 1px 1px 3px #000;
+    
+}
+.deferido{
+    border-radius: 100%;
+    border: 20px solid #ff6b6b;
+    margin-top: 1rem;
+}
+.livre{
+    border-radius: 100%;
+    border: 20px solid #6bcb77;
+    margin-left: 130px;
+    margin-top: 1rem;
+}
+.por_voce{
+    border-radius: 100%;
+    border: 20px solid #4D96FF;
+    margin-left: 130px;
+    margin-top: 1rem;
+}
+.leg1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leg2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leg3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 8px;
+}
