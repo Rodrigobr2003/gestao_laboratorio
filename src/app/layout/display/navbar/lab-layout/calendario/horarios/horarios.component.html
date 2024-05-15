@@ -1,13 +1,18 @@
 <div class="container">
     <div class="header">
         <div class="title">
-            <h1>
+            <h1 class="">
                 Laboratório 1
             </h1>
-                <img src="../../../../../../../assets/Icone computador 1 svg.png">
+            <div class="desktop">
+                <fa-icon [icon]="computador" class="fa-3x"></fa-icon>
+            </div>
         </div>
         <div class="calendario">
-            <h1>Abril</h1>
+            <fa-icon [icon]="calendario" class="fa-2x"></fa-icon>
+            <select>
+                <option *ngFor="let mes of monthAno" [value]="mes">{{ mes }}</option>
+            </select>
         </div>
     </div>
     <div class="">
