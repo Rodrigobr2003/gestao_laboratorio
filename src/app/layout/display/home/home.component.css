@@ -1,0 +1,61 @@
+.home{
+  display: flex;
+  flex-direction: row;
+}
+
+.profile{
+  height: 90%;
+  width: 47%;
+  display: flex;
+  background-color: lightblue;
+  margin: 2%;
+  position: absolute;
+  border-radius: 50px;
+}
+
+.warnings{
+  height: 90%;
+  width: 47%;
+  background-color: lightblue;
+  margin: 2%;
+  border-radius: 50px;
+  float: right;
+  position: relative;
+  border: 5px solid black;
+}
+
+.cad{
+  flex-direction: column;
+  font-family: sans-serif;
+  text-align: left;
+  font-size: larger;
+  width: 55%;
+}
+
+.userpic{
+  width: 40%;
+  height: 300px;
+  position: relative;
+}
+
+.infos{
+  background-color: white;
+  border-radius: 2px;
+  width: 100%;
+  position: relative;
+}
+
+.menus{
+  text-align: left;
+  position: relative;
+  font-family: sans-serif;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 2px;
+  width: 50%;
+  margin: 5px;
+}
+
+.user{
+  display: flex;
+}
