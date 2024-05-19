@@ -1,1 +1,47 @@
-<p>horarios works!</p>
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <h1 class="">
+                Laboratório 1
+            </h1>
+            <div class="desktop">
+                <fa-icon [icon]="computador" class="fa-3x"></fa-icon>
+            </div>
+        </div>
+        <div class="calendario">
+            <fa-icon [icon]="calendario" class="fa-2x"></fa-icon>
+            <select>
+                <option *ngFor="let mes of monthAno" [value]="mes">{{ mes }}</option>
+            </select>
+        </div>
+    </div>
+    <div class="">
+        <div class="horario1">
+            <button class="button1">7:40</button>
+        </div>
+        <div class="horarios">
+            <button class="button">9:30</button>
+        </div>
+        <div class="horarios">
+            <button class="button">11:20</button>
+        </div> 
+    </div>
+    <div class="legenda">
+        <div class="leg1">
+            <div class="deferido">
+            </div>
+            <div class="desc">Deferido</div>  
+        </div>
+        <div class="leg2">
+            <div class="livre">
+            </div>
+            <div class="desc">livre</div>
+        </div>
+        <div class="leg3">
+            <div class="por_voce">
+            </div>
+            <div class="desc">Deferido por você</div>
+        </div>
+    </div>
+</div>
+
