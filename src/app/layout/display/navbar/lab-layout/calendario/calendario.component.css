@@ -64,3 +64,19 @@ select{
     flex-wrap: wrap; 
     gap: 10px;
 }
+
+footer{
+    color: #31363F;
+}
+.deferido{
+    background-color: #FF6B6B;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.livre{
+    background-color: #6BCB77;
+}
+.porvoce{
+    background-color: #4D96FF;
+}
