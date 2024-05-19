@@ -20,8 +20,8 @@ export class LaboratoriosComponent implements OnInit {
     this.listaLabs = this.labSrv.getLabs();
   }
 
-  acessarLab() {
-    this.router.navigate(['../', 1, 'lab1', 'disponibilidade'], {
+  acessarLab(id): void {
+    this.router.navigate(['../', id, 'lab' + id, 'disponibilidade'], {
       relativeTo: this.route
     });
   }
