@@ -22,4 +22,9 @@ export class CalendarioComponent implements OnInit{
     "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
   "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
   ];
+
+  times = [1, 2, 3, 4];
+
+  daysOfWeek = ['Seg', 'Ter', 'Quar', 'Quin', 'Sex'];
+  startDate = new Date(2024, 0, 1);
 }

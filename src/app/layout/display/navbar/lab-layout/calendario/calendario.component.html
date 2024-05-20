@@ -8,24 +8,45 @@
             </select>
         </div>
     </div>
-    <section class="list">
-        <div>
-           <div class="line"></div>
-        <div class="day">
-            <p>Seg</p>
-            <p>01/04</p>
-        </div>  
+    <div *ngFor="let time of times" class="weeks">
+        <div class="line"></div>
+        <div class="week">
+            <div class="day">
+                <p>Seg</p>
+                <p>01/04</p>
+            </div>
+            <div class="day">
+                <p>Ter</p>
+                <p>01/04</p>
+            </div>
+            <div class="day">
+                <p>Quar</p>
+                <p>01/04</p>
+            </div>
+            <div class="day">
+                <p>Quin</p>
+                <p>01/04</p>
+            </div>
+            <div class="day">
+                <p>Sex</p>
+                <p>01/04</p>
+            </div>
         </div>
-       
-    </section>
-
+    </div>
+    <div class="line"></div>
     <footer>
-        <div class="deferido"></div>
-            <p>deferido</p>
-        <div class="livre"></div>
-            <p>Livre</p> 
-        <div class="porvoce"></div>
+        <div class="status-item">
+            <div class="deferido"></div>
+            <p>Deferido</p>
+        </div>
+        <div class="status-item">
+            <div class="livre"></div>
+            <p>Livre</p>
+        </div>
+        <div class="status-item">
+            <div class="porvoce"></div>
             <p>Deferido por você</p>
+        </div>
     </footer>
 
 </div>
