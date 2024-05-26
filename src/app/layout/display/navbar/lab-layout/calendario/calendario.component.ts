@@ -59,7 +59,7 @@ export class CalendarioComponent implements OnInit {
         week.push({ day, date, isColorChanged: false });
         currentDate.setDate(currentDate.getDate() + 1);
       }
-
+      currentDate.setDate(currentDate.getDate() + 2);
       this.weeks.push(week);
     }
   }
