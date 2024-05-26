@@ -8,29 +8,14 @@
             </select>
         </div>
     </div>
-    <div *ngFor="let time of times" class="weeks">
+    <div *ngFor="let week of weeks" class="weeks">
         <div class="line"></div>
-        <div class="week">
-            <div class="day">
-                <p>Seg</p>
-                <p>01/04</p>
+        <div  class="week">
+            <div *ngFor="let day of week" class="day" (click)="changeColor(day)" [ngClass]="{'day-changed': day.isColorChanged}">
+                <p>{{ day.day }}</p>
+                <p>{{ day.date }}</p>
             </div>
-            <div class="day">
-                <p>Ter</p>
-                <p>01/04</p>
-            </div>
-            <div class="day">
-                <p>Quar</p>
-                <p>01/04</p>
-            </div>
-            <div class="day">
-                <p>Quin</p>
-                <p>01/04</p>
-            </div>
-            <div class="day">
-                <p>Sex</p>
-                <p>01/04</p>
-            </div>
+              
         </div>
     </div>
     <div class="line"></div>
@@ -48,5 +33,4 @@
             <p>Deferido por você</p>
         </div>
     </footer>
-
 </div>
