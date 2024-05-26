@@ -7,6 +7,9 @@
     font-style: italic;
     text-shadow: 1px 1px rgba(46, 46, 46, 0.1);
 }
+h1{
+    margin: 20px;
+}
 .calendar{
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -60,8 +63,8 @@ select{
 
 }
 .day{
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     margin-bottom: 10px;
     background-color: #6BCB77;
     border-radius: 10px;
@@ -75,11 +78,12 @@ select{
     padding: 5px;
     box-sizing: border-box;
     transition: background-color 0.5s ease; 
-    border: #31363F;
+    border: 1px solid black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .day-changed {
-  background-color: #FF6B6B;
+  background-color: #4D96FF;
 }
 
 .list{
