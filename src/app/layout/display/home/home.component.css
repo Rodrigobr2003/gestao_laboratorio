@@ -1,61 +1,115 @@
-.home{
+.home {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.leftSide {
+  width: 50%;
+}
+
+.user {
+  height: 25%;
+  margin: 20px 0 0 20px;
   display: flex;
   flex-direction: row;
 }
 
-.profile{
-  height: 90%;
-  width: 47%;
+.divImg {
   display: flex;
-  background-color: lightblue;
-  margin: 2%;
-  position: absolute;
-  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #31363f;
+  width: 30%;
+  height: 100%;
+  border-radius: 28px;
 }
 
-.warnings{
-  height: 90%;
-  width: 47%;
-  background-color: lightblue;
-  margin: 2%;
-  border-radius: 50px;
-  float: right;
-  position: relative;
-  border: 5px solid black;
+.userPic {
+  width: 70%;
+  border-radius: 80px;
 }
 
-.cad{
+.userInfos {
+  margin-left: 20px;
+  width: 50%;
+  display: flex;
   flex-direction: column;
-  font-family: sans-serif;
-  text-align: left;
-  font-size: larger;
+}
+
+.box {
+  display: flex;
+  background-color: #76abae;
+  border-radius: 10px;
+  margin: 5px;
+  height: 22px;
+}
+
+.sub {
+  background-color: #557e81;
+  margin-left: 40px;
+}
+
+.paginas {
+  height: 75%;
+}
+
+.lista {
+  width: 80%;
+  margin: 20px 0 0 20px;
+}
+
+.lista .box {
   width: 55%;
 }
 
-.userpic{
-  width: 40%;
-  height: 300px;
-  position: relative;
-}
-
-.infos{
-  background-color: white;
-  border-radius: 2px;
-  width: 100%;
-  position: relative;
-}
-
-.menus{
-  text-align: left;
-  position: relative;
-  font-family: sans-serif;
-  flex-direction: row;
-  background-color: white;
-  border-radius: 2px;
+.rightSide {
+  background-color: #76abae;
+  border-radius: 0 55px 55px 0;
   width: 50%;
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.user{
+.borda {
+  background-color: #31363f;
+  width: 90%;
+  height: 90%;
+  border-radius: 24px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quadroAvisos {
+  background-color: #eeeeee;
+  width: 95%;
+  height: 95%;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.danger {
+  background-color: #e54848;
+  width: 90%;
+  height: 15%;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.danger fa-icon {
+  color: #b10e29;
+  margin: 0 10px;
+}
+
+.danger p {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Jost", sans-serif;
+  margin: 0 10px;
 }
