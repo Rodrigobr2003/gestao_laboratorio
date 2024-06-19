@@ -60,6 +60,7 @@
 }
 
 .lista .box {
+  cursor: pointer;
   width: 55%;
 }
 
