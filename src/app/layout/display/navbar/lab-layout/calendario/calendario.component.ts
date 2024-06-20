@@ -1,22 +1,31 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-calendario',
   templateUrl: './calendario.component.html',
-  styleUrls: ['./calendario.component.css']
+  styleUrls: ['./calendario.component.css'],
 })
 export class CalendarioComponent implements OnInit {
-
   @ViewChild('monthSelect') monthSelect: ElementRef;
 
   id: number;
   calendario = faCalendarDays;
 
   monthAno: string[] = [
-    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
-    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    'Janeiro',
+    'Fevereiro',
+    'Março',
+    'Abril',
+    'Maio',
+    'Junho',
+    'Julho',
+    'Agosto',
+    'Setembro',
+    'Outubro',
+    'Novembro',
+    'Dezembro',
   ];
 
   times = [1, 2, 3, 4];
@@ -24,9 +33,9 @@ export class CalendarioComponent implements OnInit {
   daysOfWeek = ['Seg', 'Ter', 'Quar', 'Quin', 'Sex'];
   startDate = new Date(2024, 0, 1);
 
-  weeks: { date: string, day: string, isColorChanged: boolean }[][] = [];
+  weeks: { date: string; day: string; isColorChanged: boolean }[][] = [];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     this.id = this.route.snapshot.params['id'];
@@ -35,7 +44,9 @@ export class CalendarioComponent implements OnInit {
 
   ngAfterViewInit(): void {
     this.monthSelect.nativeElement.value = this.startDate.getMonth();
-    this.monthSelect.nativeElement.addEventListener('change', () => this.onMonthChange());
+    this.monthSelect.nativeElement.addEventListener('change', () =>
+      this.onMonthChange()
+    );
   }
 
   onMonthChange(): void {
@@ -45,13 +56,13 @@ export class CalendarioComponent implements OnInit {
   }
 
   initializeDays() {
-    this.weeks = []; 
+    this.weeks = [];
     const currentDate = new Date(this.startDate);
-    const numWeeks = 4;  
+    const numWeeks = 4;
     const daysPerWeek = this.daysOfWeek.length;
 
     for (let i = 0; i < numWeeks; i++) {
-      const week: { date: string, day: string, isColorChanged: boolean }[] = [];
+      const week: { date: string; day: string; isColorChanged: boolean }[] = [];
 
       for (let j = 0; j < daysPerWeek; j++) {
         const day = this.daysOfWeek[j];
@@ -70,7 +81,8 @@ export class CalendarioComponent implements OnInit {
     return `${day}/${month}`;
   }
 
-  changeColor(day: { date: string, day: string, isColorChanged: boolean }) {
-    day.isColorChanged = !day.isColorChanged;
+  changeColor(day: { date: string; day: string; isColorChanged: boolean }) {
+    // day.isColorChanged = !day.isColorChanged;
+    this.router.navigate(['/layout/horarios']);
   }
 }
