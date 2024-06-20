@@ -1,0 +1,164 @@
+.lab {
+  display: flex;
+  float: right;
+  width: 88%;
+  height: 100%;
+  justify-content: center;
+}
+
+.bord {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 457;
+  font-style: italic;
+  width: 50%;
+  margin: 20px;
+}
+
+.title {
+  color: #76abae;
+  text-align: start;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #31363f;
+  text-align: start;
+}
+
+.subtitle-left {
+  width: 250px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.subtitle-right {
+  width: 60%;
+  height: 15%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  border-radius: 16px;
+}
+
+.date {
+  height: 45%;
+  margin-left: 10px;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.year {
+  height: 35%;
+  background-color: #fff;
+  border-radius: 16px 16px 0 0;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+.months {
+  height: 15%;
+  background-color: #76abae;
+  font-weight: bold;
+}
+
+.select-date {
+  height: 50%;
+  background-color: #d9d9d9;
+  border-radius: 0 0 16px 16px;
+  justify-content: start;
+  overflow-x: auto;
+}
+
+.select-date .box-day {
+  border: 1px solid #000;
+  background-color: #ff6b6b;
+  width: 25%;
+  height: 75%;
+  margin: 0 5px 15px 5px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.select-date .box-day h4 {
+  color: #eee;
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 5px 0;
+}
+
+.teste {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 5px solid #000;
+  resize: none;
+  height: 15%;
+  padding-left: 10px;
+  font-size: 1.3em;
+}
+
+button {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 457;
+  padding: 4px 18px;
+  border-radius: 4px;
+  border: none;
+  background-color: #76abae;
+  color: #eee;
+  font-size: 1.2em;
+  margin: 10px 0 0 2px;
+  transition: background-color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: #a4d2d4;
+  color: #6d6d6d;
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 5px;
+  height: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

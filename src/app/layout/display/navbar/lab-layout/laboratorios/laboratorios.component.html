@@ -1,0 +1,19 @@
+<div class="lab">
+  <div class="top">
+    <h1 class="title">Laboratórios</h1>
+    <div class="divider"></div>
+    <br />
+    <h3 class="subtitle">Escolha o laboratório que deseja reservar :</h3>
+  </div>
+
+  <div class="bottom">
+    <div
+      appBrightnessLab
+      (click)="acessarLab(lab.id)"
+      class="computers"
+      *ngFor="let lab of listaLabs"
+    >
+      <img src="{{ lab.img }}" alt="computers" id="{{ lab.id }}" />
+    </div>
+  </div>
+</div>
