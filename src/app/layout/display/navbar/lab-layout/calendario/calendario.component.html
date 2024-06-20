@@ -1,1 +1,38 @@
-<h1 class="title">Laboratórios </h1>
+<div class="calendar">
+    <div class="header">
+      <h1 class="title">Laboratório {{id}}</h1>
+      <div class="month">
+        <fa-icon [icon]="calendario" class="icon"></fa-icon>
+        <select #monthSelect>
+          <option *ngFor="let mes of monthAno; let i = index" [value]="i">{{ mes }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="weeks">
+      <div *ngFor="let week of weeks" class="week-container">
+        <div class="line"></div>
+        <div class="week">
+          <div *ngFor="let day of week" class="day" (click)="changeColor(day)" [ngClass]="{'day-changed': day.isColorChanged}">
+            <p>{{ day.day }}</p>
+            <p>{{ day.date }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <footer>
+      <div class="status-item">
+        <div class="deferido"></div>
+        <p>Deferido</p>
+      </div>
+      <div class="status-item">
+        <div class="livre"></div>
+        <p>Livre</p>
+      </div>
+      <div class="status-item">
+        <div class="porvoce"></div>
+        <p>Deferido por você</p>
+      </div>
+    </footer>
+  </div>
+  

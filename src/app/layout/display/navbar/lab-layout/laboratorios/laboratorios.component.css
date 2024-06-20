@@ -15,6 +15,7 @@
 
 .computers img:hover {
     filter: brightness(150%);
+    cursor: pointer;
 }
 
 
