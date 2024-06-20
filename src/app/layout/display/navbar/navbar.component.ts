@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import {
   faArrowLeftLong,
@@ -15,4 +17,15 @@ export class NavbarComponent {
   arrowLeftLong = faArrowLeftLong;
   headset = faHeadset;
   filePen = faFilePen;
+
+  router = inject(Router);
+  location = inject(Location);
+
+  navegarApelo() {
+    this.router.navigate(['/layout/apelar']);
+  }
+
+  retornar() {
+    this.location.back();
+  }
 }
